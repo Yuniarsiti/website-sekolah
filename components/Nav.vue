@@ -1,26 +1,48 @@
-<template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Beranda</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Profil</a>
+</template>
+  <header>
+    <nav class="navbar">
+      <ul class="navbar-menu">
+        <li>
+          <a href="#home" class="navbar-link">Beranda</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Ekstakulikuler</a>
+        <li>
+          <a href="#profil" class="navbar-link">Profil</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"></a>
+        <li>
+          <a href="#kontak" class="navbar-link">Kontak</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Galeri</a>
+        <li>
+          <a href="#ekstrakurikuler" class="navbar-link">Ekstrakuikuler</a>
         </li>
       </ul>
-    </div>
-  </div>
-</nav>
+    </nav>
+  </header>
 </template>
+
+<style scoped>
+.navbar {
+  background-color: #eaeaf2;
+  padding: 10px;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.navbar-menu li {
+  margin: 0 15px;
+}
+
+.navbar-link {
+  color: rgb#0E0E55;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-link:hover {
+  color: #FFCC00; /* Ubah warna saat hover */
+}
+</style>

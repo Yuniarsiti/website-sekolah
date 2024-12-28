@@ -45,13 +45,15 @@
 .contact-info {
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
-  text-align: right; /* Rata kanan */
+  display: flex;  /* Flexbox untuk tata letak horizontal */
+  justify-content: flex-end; /* Menempatkan semua item ke kanan */
+  align-items: center;
+  gap: 30px; /* Jarak antar item */
 }
 
 .contact-info p {
   margin: 0;
   display: flex;
-  justify-content: flex-end; /* Ikon dan teks sejajar ke kanan */
   align-items: center;
   gap: 10px;
 }
