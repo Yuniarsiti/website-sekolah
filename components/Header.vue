@@ -1,14 +1,14 @@
 <template>
-  <header class="header-school">
-    <div class="container-fluid">
-      <div class="row align-items-center">
+<div class="container-fluid p-0">
+  <div class="header-school">
+      <div class="row align-items-center m-0">
         <!-- Logo -->
         <div class="col-lg-2 col-md-3 col-4 text-center">
-          <img src="~/assets/LOGO-SMKN4.png" alt="Logo SMKN 4" class="logo" />
+          <img src="~/assets/LOGO-SMKN4.png" alt="Logo SMKN 4" class="logo m-3" />
         </div>
 
         <!-- Informasi Kontak -->
-        <div class="col-lg-10 col-md-9 col-8 text-end">
+        <div class="col-lg-10 col-md-9 col-8">
           <div class="contact-info">
             <p>
               <i class="fas fa-map-marker-alt"></i> Jl. Depok, Sukamenak, Purbaratu, Tasikmalaya
@@ -23,7 +23,7 @@
         </div>
       </div>
     </div>
-  </header>
+  </div>
 </template>
 
 <style scoped>
@@ -34,11 +34,10 @@
 .header-school {
   background-color: #0E0E55;
   color: white;
-  padding: 15px 0;
 }
 
 .logo {
-  max-width: 100px;
+  max-width: 60px;
 }
 
 /* Kontak Styling */
@@ -49,6 +48,7 @@
   justify-content: flex-end; /* Menempatkan semua item ke kanan */
   align-items: center;
   gap: 30px; /* Jarak antar item */
+  margin-right: 50px;
 }
 
 .contact-info p {

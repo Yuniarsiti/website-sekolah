@@ -1,28 +1,30 @@
-</template>
-  <header>
-    <nav class="navbar">
-      <ul class="navbar-menu">
+<template>
+  <div class="container-fluid p-0">
+    <nav class="navbar justify-content-center">
+      <ul class="navbar-menu m-1">
         <li>
-          <a href="#home" class="navbar-link">Beranda</a>
+          <nuxt-link to="/" class="navbar-link active">Beranda</nuxt-link>
         </li>
         <li>
-          <a href="#profil" class="navbar-link">Profil</a>
+          <nuxt-link to="/profil" class="navbar-link">Profil</nuxt-link>
         </li>
         <li>
-          <a href="#kontak" class="navbar-link">Kontak</a>
+          <nuxt-link to="/galeri" class="navbar-link">Galeri</nuxt-link>
         </li>
         <li>
-          <a href="#ekstrakurikuler" class="navbar-link">Ekstrakuikuler</a>
+          <nuxt-link to="/ekstrakulikuler/" class="navbar-link">Ekstrakurikuler</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="/berita/" class="navbar-link">Berita</nuxt-link>
         </li>
       </ul>
     </nav>
-  </header>
+  </div>
 </template>
 
 <style scoped>
 .navbar {
   background-color: #eaeaf2;
-  padding: 10px;
 }
 
 .navbar-menu {
@@ -38,7 +40,7 @@
 .navbar-link {
   color: rgb#0E0E55;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 15px;
   font-family: 'Open Sans', sans-serif;
 }
 
